@@ -96,6 +96,7 @@ z-index: 1;
   list-style-type: none;
   position: relative;
   cursor: pointer;
+
 }
 
 .navigation-user-item:nth-of-type(2) {
@@ -105,6 +106,7 @@ z-index: 1;
   list-style-type: none;
   position: relative;
   cursor: pointer;
+
 }
 
 .notification-badge {
@@ -114,11 +116,12 @@ z-index: 1;
   color: #ffffff;
   background: #7db54f;
   border-radius: 50%;
-  padding: 5px 5px;
+  padding: 4px 5px;
   list-style-type: none;
-  position: absolute;
+  position: relative;
+  top: 8px;
+  left: 22px;
   content: "";
-  transform: translateX(95%) translateY(50%);
 }
 
 .navigation-user-link-favorite {
@@ -209,7 +212,7 @@ z-index: 1;
   line-height: 26px;
   text-align: center;
   margin-top: 25px;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
 }
 
 .advantages-list {
@@ -355,6 +358,14 @@ z-index: 1;
   background-position: top 82px right 163px;
 }
 
+.infrastructure-item:nth-child(2n+1) {
+  background-color:  #83b3d31f;
+}
+
+.infrastructure-item:nth-child(2n) {
+  background-color:  #ffffff;
+}
+
 .infrastructure-title {
   font-size: 24px;
   font-weight: 700;
@@ -434,9 +445,10 @@ z-index: 1;
 }
 
 .field {
+  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 15px 194px 13px 20px;
   border-radius: 4px 0 0 4px;
   border: none;
@@ -461,6 +473,7 @@ z-index: 1;
 }
 
 .subscribe-button {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -765,6 +778,7 @@ justify-content:space-between;
 }
 
 .field-price:nth-of-type(1) {
+  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-size: 18px;
   font-weight: 700;
@@ -776,9 +790,11 @@ justify-content:space-between;
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+  -moz-appearance: none;
 }
 
 .field-price:nth-of-type(2) {
+  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-size: 18px;
   font-weight: 700;
@@ -790,6 +806,7 @@ justify-content:space-between;
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+  -moz-appearance: none;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -900,6 +917,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .catalog-filter-submit {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -918,6 +936,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .catalog-filter-reset {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1047,7 +1066,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .product-card {
   display: grid;
-  grid-template-rows: 232px 28px 21px 36px 57px;
+  grid-template-rows: 232px 28px 21px 36px auto;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
   border: 1px solid #E6E6E6;
@@ -1158,6 +1177,7 @@ input[type="number"]::-webkit-outer-spin-button {
   text-transform: uppercase;
   color: #333333;
   padding-top: 9px;
+  padding-bottom: 8px;
   margin-bottom: 20px;
   border-radius: 4px;
   background: #f2f2f2;
@@ -1168,7 +1188,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .pagination {
   display: flex;
   gap: 8px;
-  margin: 40px 70px 60px 70px;
+  margin: 40px 70px 72px 70px;
   padding: 0;
   list-style-type: none;
   font-size: 20px;
@@ -1180,7 +1200,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .pagination-current {
   color: #000000;
   background: #f2f2f2;
-  padding: 11px 20px 11px 20px;
+  padding: 16px 23px 16px 23px;
   border-radius: 4px;
   text-decoration: none;
   border: 1px solid #ffffff;
@@ -1190,7 +1210,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .pagination-link {
   color: #ffffff;
   background: #82b3d3;
-  padding: 11px 20px 11px 20px;
+  padding: 16px 23px 16px 23px;
   border-radius: 4px;
   text-decoration: none;
   border: 1px solid #ffffff;
@@ -1208,7 +1228,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .pagination-item:last-of-type .pagination-link {
-  padding: 11px 15px 11px 15px;
+  padding: 16px 18px 16px 17px;
 }
 
 .pagination-current:hover,
@@ -1252,7 +1272,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .field-catalog {
   font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
   margin: 0;
+  padding: 15px 212px 13px 20px;
 }
 
 .field-catalog:focus {
@@ -1297,10 +1322,6 @@ input[type="number"]::-webkit-outer-spin-button {
   cursor: default;
 }
 
-
-
-
-
 /* catalog footer */
 
 .footer-phone {
@@ -1309,6 +1330,7 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   text-decoration: none;
   color: #000000;
+  white-space: nowrap;
 }
 
 .modal-container {
